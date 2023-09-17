@@ -1,0 +1,11 @@
+pipeline {
+    agent any // This means the pipeline can run on any available agent (Jenkins master or any agent node)
+
+    stages {
+        stage('Hello') { // Define a stage named 'Hello'
+            steps {
+                echo 'Hello, World!' // Print 'Hello, World!' to the build console
+            }
+        }
+    }
+}
